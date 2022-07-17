@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+        }
+        nav li a{
+            text-decoration: none;
+        }
+        nav li{
+            list-style: none;
+            padding: 20px;
+        }
+        nav li :hover{
+            background-color: grey;
+        }
+        nav> ul> li:hover> ul{
+            display: block;
+        }
+        .dpdown{
+            display: none;
+            position: absolute;
+            padding: 0px;
+        }
+        .dpdown li{
+            padding: 0px, 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home
+                <ul class="dpdown">
+                    <li> <a href="">Link-1</a></li>
+                    <li> <a href="">Link-2</a></li>
+                    <li> <a href="">Link-3</a></li>
+                </ul>
+            </a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
